@@ -37,6 +37,8 @@ Stable internet connection
                   Installation & Setup
 Step 1: Clone or Download the Project
 Download all the project files to your local machine.
+(https://console.cloud.google.com/)
+(https://aistudio.google.com/)
 
 Step 2: Install Required Dependencies
 Open your terminal/command prompt and run:
