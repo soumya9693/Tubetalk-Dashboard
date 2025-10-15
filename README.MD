@@ -1,20 +1,20 @@
-TubeTalk: Your AI YouTube Assistant 📺
+TubeTalk: Your AI YouTube Assistant 
 TubeTalk is an intelligent web application that transforms YouTube videos into concise, well-structured summaries using Google Gemini AI. Save time and get the key insights from any YouTube video in seconds!
 
-🌟 Features
-🎬 Video Summarization: Convert lengthy YouTube videos into concise summaries
+                         Features
+ Video Summarization: Convert lengthy YouTube videos into concise summaries
 
-🤖 AI-Powered: Utilizes Google Gemini AI for intelligent content analysis
+ AI-Powered: Utilizes Google Gemini AI for intelligent content analysis
 
-📝 Transcript Extraction: Automatically extracts subtitles and captions
+ Transcript Extraction: Automatically extracts subtitles and captions
 
-📊 Analytics: Provides transcript statistics and metrics
+ Analytics: Provides transcript statistics and metrics
 
-💾 Download: Save summaries for offline reading
+ Download: Save summaries for offline reading
 
-🎨 User-Friendly: Clean, intuitive interface with progress tracking
+ User-Friendly: Clean, intuitive interface with progress tracking
 
-🛠️ Technologies Used
+                      Technologies Used
 Frontend: Streamlit
 
 AI Model: Google Gemini AI
@@ -25,7 +25,7 @@ Transcript Handling: Custom subtitle parser (supports JSON, VTT, SRT formats)
 
 Environment Management: python-dotenv
 
-📋 Prerequisites
+                     Prerequisites
 Before running TubeTalk, ensure you have:
 
 Python 3.8 or higher installed
@@ -34,19 +34,20 @@ Google Gemini API Key (Get it here)
 
 Stable internet connection
 
-🚀 Installation & Setup
+                  Installation & Setup
 Step 1: Clone or Download the Project
 Download all the project files to your local machine.
 
 Step 2: Install Required Dependencies
 Open your terminal/command prompt and run:
 
-bash
+                        bash
 pip install streamlit python-dotenv langchain-google-genai langchain-core yt-dlp requests
+
 Step 3: Set Up Environment Variables
 Create a file named .env in the project root directory
 
-Add your Google Gemini API key to the file:
+             Add your Google Gemini API key to the file:
 
 env
 GOOGLE_API_KEY="your_actual_api_key_here"
@@ -55,18 +56,18 @@ Replace your_actual_api_key_here with your actual Google Gemini API key.
 Step 4: Run the Application
 Execute the following command in your terminal:
 
-bash
+                        bash
 streamlit run app.py
 (Replace app.py with the actual name of your Python file)
 
 Step 5: Access the Application
 Once running, the application will automatically open in your default web browser at:
 
-text
+                       text
 http://localhost:8501
 If it doesn't open automatically, you can manually navigate to this address.
 
-📖 How to Use
+ How to Use
 Enter YouTube URL:
 
 Go to the "Video Summary" tab
@@ -81,7 +82,7 @@ https://youtu.be/VIDEO_ID
 
 Generate Summary:
 
-Click the "🚀 Generate Summary" button
+Click the "Generate Summary" button
 
 The app will:
 
@@ -101,7 +102,7 @@ Download the summary as a text file
 
 Check analytics in the "Analytics" tab
 
-🔧 Configuration
+               Configuration
 Available Gemini Models
 The application automatically tries these models in order:
 
@@ -115,14 +116,14 @@ gemini-flash-latest (Latest flash)
 
 gemini-pro-latest (Latest pro)
 
-Customization
+              Customization
 You can modify the AI behavior by adjusting:
 
 temperature parameter in the setup_llm() function
 
 Prompt template in the prompt_template variable
 
-🎯 Supported Video Types
+            Supported Video Types
 Videos with manual subtitles (preferred)
 
 Videos with automatic captions
@@ -131,7 +132,7 @@ Videos in multiple languages (English prioritized)
 
 Various subtitle formats (JSON, VTT, SRT)
 
-⚠️ Important Notes
+             Important Notes
 Subtitles Required: The video must have subtitles or automatic captions enabled
 
 API Limits: Be mindful of Google Gemini API usage limits
@@ -140,7 +141,7 @@ Video Availability: Some videos may restrict transcript access
 
 Internet Connection: Required for all operations
 
-🐛 Troubleshooting
+              Troubleshooting
 Common Issues:
 "API Key Not Found"
 
@@ -170,7 +171,7 @@ Check if Streamlit is properly installed
 
 Verify no syntax errors in the code
 
-📁 Project Structure
+                     Project Structure
 text
 tubetalk/
 ├── app.py                 # Main application file
@@ -186,7 +187,7 @@ No data is stored permanently on external servers
 
 API calls are made directly to Google's servers
 
-📞 Support
+                        Support
 If you encounter any issues:
 
 Check the troubleshooting section above
@@ -197,7 +198,7 @@ Verify your Google Gemini API key is valid and active
 
 Check that the YouTube video has available subtitles
 
-🎉 Enjoy Using TubeTalk!
+                   Enjoy Using TubeTalk!
 Transform your YouTube learning experience with AI-powered summaries. Perfect for students, researchers, content creators, and anyone looking to save time while consuming video content!
 
 Note: This application is for educational and personal use. Please respect YouTube's Terms of Service and content creators' rights.
